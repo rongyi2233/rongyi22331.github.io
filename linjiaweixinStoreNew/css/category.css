@@ -9,37 +9,37 @@
 	background:#fff url(../img/icon_FL_2_search@2x.png) no-repeat 1.2rem center/.3rem .3rem;
 }
 
-#content{
-	height:100%;
-}
+
 #content .wrap{
 	height: 100%;
 }
-#content .con-left ul{
+#swiper-container1{
+	height: 100%;
+}
+#content .con-left .swiper-wrapper{
 	display: block;
 	background: #F8F8F8;
 	width:1.8rem;
 	line-height: 0.83rem;
 	font-size: .26rem;
+	height: 100%;
 }
-#content .con-left ul li{	
+#content .con-left .swiper-wrapper .active{
+	background: #fff url(../img/active-bg.png) no-repeat left center/.1rem .74rem;
+}
+#content .con-left .swiper-slide{	
 	height:0.83rem;
 	text-align: center;
 	border-top:1px solid #E8E8E8;
-}
-#content .con-left .scrollWrap{
-	height: 100%;
+	background: #F8F8F8;
 }
 #content .scrollWrap{
 	position: relative;
 	width:100%;
-	height:8rem;
 	overflow: hidden;
+	height: 100%;
 }
-#content{
-	background: #fff;
-	color: #2b2b2b;
-}
+
 #content .wrap{
 	display: flex;
 }
@@ -50,10 +50,12 @@
 #content .wrap .con-right{
 	flex: 1;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 #swiper-container2{
 	height:.83rem;
-	font-weight: bold;
+	font-weight: 500;
 	font-size: .26rem;
 }
 #swiper-container2 .active{
@@ -67,6 +69,10 @@
 #swiper-container3{
 	width:5.3rem;
 	overflow: hidden;
+	flex:1;	
+}
+#swiper-container3 .scrollWrap{
+	padding-bottom: 2rem;
 }
 #swiper-container3 dl{
 	overflow: hidden;
@@ -97,20 +103,17 @@
 	text-align: center;
 	color: #fff;
 	background: #000;
-	opacity: 0.4;
+	opacity: 0.3;
 }
 #swiper-container3 dd{
 	float:left;
 	width:3.5rem;
 	text-align: left;
 }
-#swiper-container3 .scrollWrap{
-	padding-bottom: .83rem;
-}
 #swiper-container3 dd:nth-of-type(1){
 	font-size: 0.28rem;
 	line-height: 0.48rem;
-	font-weight: bold;
+	font-weight: 500;
 }
 #swiper-container3 dd:nth-of-type(2){
 	font-size: 0.24rem;
@@ -134,7 +137,7 @@
 #swiper-container3 dd:nth-of-type(3) i{
 	float: right;
 	color:#666;
-	margin-right: 0.55rem;
+	margin-right: 0.6rem;
 }
 #swiper-container3 dd:nth-of-type(4){
 	font-size: 0.2rem;
@@ -160,7 +163,7 @@
 }
 #swiper-container3 p{
 	position: absolute;
-	right:0;
+	right:.1rem;
 	width:0.58rem;
 	height: 0.58rem;
 	bottom:0;

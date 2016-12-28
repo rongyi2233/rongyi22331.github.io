@@ -11,7 +11,8 @@
 
 /*商品相关的样式*/
 #content{
-	/*background: #fff;*/
+	background: #efeff4;
+	overflow: scroll;
 }
 #content .order-details{
 	border-bottom: 1px solid #eee;
@@ -28,30 +29,21 @@
 #content .last-item{
 	border-bottom: none;
 }
+
 #content .item .left-checkbox{
-	padding:.5rem 0.4rem;
-}
-#content .left-checkbox input{
-	left:0;
+	position: absolute;
 	top:50%;
-	margin-top:-14px;
+	width: .36rem;
+	height: .36rem;
+	margin-top:-0.18rem;
 }
-#content .left-checkbox input::before{
-	/*width:.36rem;
-	height: .36rem;*/
-	font-size: .5rem;
-	color:#F8CC0B;
-}
-#content .left-checkbox::after{
-	content:"";
-	height:100%;
-	width:0;
-	display: inline-block;
-	vertical-align: middle;
+#content .item .left-checkbox label{
+	line-height: 0;
+	font-size: 0;
 }
 #content .item dl{
 	overflow: hidden;	
-	padding:.1rem 0;
+	padding:.1rem 0 .1rem .6rem;
 }
 #content .item dt{
 	width:1.28rem;
@@ -84,9 +76,7 @@
 }
 #content .item dd:nth-of-type(1){
 	font-size: 0.28rem;
-	/*line-height: 0.48rem;*/
-	/*padding:.05rem 0;*/
-	font-weight: bold;
+	font-weight: 500;
 }
 #content .item dd:nth-of-type(1) span{
 	background: #FF5454;
@@ -97,14 +87,10 @@
 	margin-right: .05rem;
 }
 #content .item dd:nth-of-type(2){
-	font-size: 0.24rem;
-	/*line-height: 0.34rem;*/
-	/*padding:.05rem 0;*/	
+	font-size: 0.24rem;	
 }
 #content .item dd:nth-of-type(3){
 	font-size: 0.18rem;
-	/*line-height: 0.54rem;*/
-	/*padding:.1rem 0;*/
 	color:#ef3f0e;
 	position: relative;
 }
@@ -133,8 +119,6 @@
 #content .item dd:nth-of-type(4){
 	font-size: 0.2rem;
 	color: #666;
-	/*line-height: 0.4rem;*/
-	/*padding:.1rem 0;*/
 }
 #content .item dd:nth-of-type(4) span{
 	float: right;
@@ -153,15 +137,6 @@
 	margin-right: .05rem;
 	border:.03rem solid #000;
 }
-/*#content .item p{
-	position: absolute;
-	right:0;
-	width:0.58rem;
-	height: 0.58rem;
-	bottom:0;
-	background: url(../img/che@2x.png);
-	background-size: cover;
-}*/
 #content .item .mui-push-right:after{
 	content:"";
 }
@@ -209,15 +184,15 @@
 	/*padding-top:.15rem;*/
 }
 #content .settlement .left-checkbox{
-	/*height: 100%;*/
-	margin-left: .3rem;
-	line-height: 0;
+	height: 100%;
 	font-size: .26rem;
-	margin-top: .12rem;
+	margin: 0 .4rem 0 .2rem;
 }
 #content .settlement label{
-	padding-left:.7rem;
 	font-weight: bold;
+}
+#content .settlement label img{
+	vertical-align: middle;
 }
 #content .settlement span{
 	font-size: .28rem;

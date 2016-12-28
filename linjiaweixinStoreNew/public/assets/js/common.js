@@ -32,20 +32,30 @@ function switchPage(url){
 	/*return false;*/
 }
 $(function(){
+	/*var bodyH=$("body").height();
+	$("body").height(bodyH);
+	$("#content").height(bodyH);*/
 	//底部切换按钮
 	$("#footer a").click(function(){
 		console.log(this);
 		switchPage(url);
 		return false;
 	});
-	
-	//复选框的点击事件
-	$("label").on("touchend","img",function(){
-		if($(this).parent().find("input")[0].checked){
-			this.src="../img/xuanze@2x.png";
+	//初始化复选框背景
+	$("input[type=checkbox]").each(function(k,v){
+		if(v.checked){			
+			$(v).parent().find("img")[0].src="../img/xuanze_b@2x.png";
 		}else{
-			this.src="../img/xuanze_b@2x.png";
+			$(v).parent().find("img")[0].src="../img/xuanze@2x.png";
 		}
 	})
+	//复选框点击事件
+	$("label").on("touchend",function(){		
+		if($(this).find("input")[0].checked){
+				$(this).find("img")[0].src="../img/xuanze@2x.png";
+			}else{
+				$(this).find("img")[0].src="../img/xuanze_b@2x.png";
+			}
+	})
 })
-
+	

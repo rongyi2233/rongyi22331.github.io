@@ -29,7 +29,28 @@
 	<div class="mui-content"id="content">
 		<div class="wrap clearfloat">
 			<div class="con-left">
-				<div class="mui-scroll-wrapper scrollWrap">
+				<div class="swiper-container"id="swiper-container1">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide active">热销榜</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				        <div class="swiper-slide">优选饮料</div>
+				        <div class="swiper-slide">日用百货</div>
+				    </div>				 
+				</div>
+				<!--<div class="mui-scroll-wrapper scrollWrap">
 					<div class="mui-scroll">
 						<ul>
 							<li>热销榜</li>
@@ -55,7 +76,7 @@
 							<li>优选饮料</li>
 						</ul>
 					</div>
-				</div>
+				</div>-->
 				
 			</div>
 			<div class="con-right clearfloat">
@@ -256,7 +277,17 @@
 	</nav>-->
 	<script type="text/javascript"src="../public/assets/js/common.js"></script>
 	<script>
-	//设置商品展示的两个轮播图
+	//设置商品展示的3个轮播图
+		var mySwiper1 = new Swiper ('#swiper-container1', {
+		    direction: 'vertical',
+		    slideToClickedSlide:true,
+		    slidesPerView : "auto",
+		    centeredSlides : true,
+		  
+		}) ;
+		mySwiper1.on("tap",function(swiper){
+			$(swiper.clickedSlide).addClass("active").siblings().removeClass('active');			
+		})
 		var mySwiper2 = new Swiper('#swiper-container2', {
 			//和諧使用
 			watchSlidesProgress : true,
@@ -267,7 +298,7 @@
 				/*console.log(swiper.clickedIndex);*/
 				mySwiper3.slideTo(swiper.clickedIndex);
 			}
-		})
+		});
 		var mySwiper3 = new Swiper('#swiper-container3', {
 			/*autoHeight: true,*/
 			onSlideChangeStart:function(swiper){
@@ -275,7 +306,7 @@
 				mySwiper2.slides.removeClass("active").eq(swiper.activeIndex).addClass("active");
 				mySwiper2.slideTo(swiper.activeIndex);
 			}
-		})
+		});
 	//确定购物图标样式
 	var addCart=$(".addCart");
 	function changeIcon(){
@@ -308,10 +339,18 @@
 		deceleration: 0.0005, //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
 		indicators: false,
 	});
-	var leftHeight=$(".con-left").height();
-	console.log(leftHeight);
+	//进入页面，重新设置滚动区域高度；
+	var leftHeight=$("#content").height();
+	var topHeigth=$("#swiper-container2 .swiper-slide").height();
 	$(".scrollWrap").height(leftHeight);
-	mySwiper3.update();
+	
+	
+	//头部输入框获取焦点
+	/*$("#header input").focus(function(){
+		$("#footer").css("display","none")
+	}).blur(function(){
+		$("#footer").css("display","block")
+	})*/
 	</script>
 </body>
 </body>
