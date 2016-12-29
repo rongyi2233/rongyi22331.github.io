@@ -1,0 +1,88 @@
+#header{
+	vertical-align: middle;
+	background: #fff;
+	border-bottom: 1px solid #efeff4;
+	box-shadow: initial;
+}
+#header:after{
+	display:inline-block;
+    height:100%;
+    width:0;
+    vertical-align:middle
+}
+#header .backBtn{
+	vertical-align: middle;
+	display: inline-block;
+	width:17px;
+	height:18px;
+	background: url(../img/fanhui-icon@2x.png);
+	background-size: cover;
+}
+#header img{
+	width:15px;
+	vertical-align: middle;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+#header .rule{
+	color:#999;
+	font-size: 14px;		
+}
+#content{
+    padding-bottom: 0;
+/*    overflow: scroll;*/
+    background: #efeff4;
+    margin-top:.2rem;
+}
+#content .item{
+	display: flex;
+	width:6.67rem;
+	height: 2.41rem;
+	background: #fff;
+	margin:0 auto .3rem;
+	border-radius: .07rem;
+	border-bottom: .07rem solid #FE8A18;
+	color: #FE8A18;
+	text-align: center;
+}
+#content .item .item-left{
+	width:60%;
+	height: 100%;
+	border-right:1px dashed #FE8A18;
+	font-size: .22rem;	
+	line-height: 2.8;
+}
+#content .item .item-left div:nth-child(2){
+	font-size: .72rem;
+	border-top:1px solid #FE8A18;
+	border-bottom:1px solid #FE8A18;
+	width:60%;
+	margin:0 auto;
+	line-height: 1.5;	
+}
+#content .item .item-left div:nth-child(3){
+	color:#999;
+}
+#content .item .item-left div:nth-child(3) span{
+	padding:0 .1rem;
+}
+#content .item .item-left div:nth-child(3) em{
+	padding:0 .1rem;
+}
+#content .item .item-right{
+	width:40%;
+	height: 100%;
+}
+#content .item .item-right div:nth-child(1){
+	font-size: .24rem;
+	padding:.5rem 0 .5rem;
+}
+#content .item .item-right div:nth-child(2){
+	font-size: .3rem;
+	width:1.9rem;
+	height:.64rem;
+	border:1px solid #FE8A18;
+	border-radius: .32rem;
+	margin:0 auto;
+	line-height: .64rem;
+}
