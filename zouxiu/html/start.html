@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>开始</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="initial-scale=1,minimum-scayle=1,maximum-scale=1">
+		<link href="" rel="stylesheet">
+		<style>
+			html,
+			body,
+			#wrap {
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+			}
+			
+			html {
+				font-size: 15.625vw;
+			}
+			
+			#wrap {
+				position: relative;
+			}
+			
+			#wrap .bg {
+				width: 100%;
+				height: 100%;
+			}
+			
+			#wrap .start {
+				position: absolute;
+				width: 2.56rem;
+				left: 50%;
+				margin-left: -1.28rem;
+			}
+			
+			#wrap img:nth-child(2) {
+				top: 1.94rem;
+			}
+			
+			#wrap img:nth-child(3) {
+				top: 5.14rem;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload = function() {
+				setTimeout(function() {
+					location.href = "introduce.html";
+				}, 3000);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<img class="bg" src="../img/start.jpg">
+			<img class="start" src="../img/start1.png">
+			<img class="start" src="../img/start2.png">
+		</div>
+	</body>
+
+</html>

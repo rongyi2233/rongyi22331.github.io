@@ -1,0 +1,542 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-10-27 11:05:23
+ * @version $Id$
+ */
+ul,li,p,input,dl,dd,dt,ol,div,hr,h1,h2,h3,h4,h5,h6,body{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+em{
+	font-style: normal;
+}
+html,body,#wrap{
+	width:100%;
+	height:100%;
+	font-size: 16px;
+}
+html{
+	font-size: 15.625vw;
+	overflow: hidden;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#wrap{
+	display: flex;
+	flex-direction:column;
+}
+#wrap header .item1{
+	width:100%;
+	font-size: 0;
+}
+#wrap header .item1 img{
+	width:100%;
+}
+#wrap header .item2{
+	width:100%;
+	height:0.88rem;
+	background: #e4366b;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	font-weight: bold;
+	font-size: 0.4rem;
+}
+#wrap header .item3{
+	width:100%;
+	height:0.9rem;
+	background: #52525a;
+	display: flex;
+	align-items:center;
+	justify-content:center;	
+}
+#wrap header .item3 #search{
+	font-size: 0.24rem;
+	height:0.56rem;
+	width:5.9rem;
+	border-radius: 0.26rem;
+	outline: none;
+	padding-left:0.2rem;
+	border:none;
+	box-sizing:border-box;
+}
+section{
+	flex:1;
+	overflow-Y:scroll;
+}
+section .banner{
+	width:100%;
+}
+section .banner img{
+	width:100%;
+	height:2.5rem;
+}
+section #content{
+	/* display: flex;
+	flex-direction:column; */
+}
+section #content .item1{
+	padding:0.2rem;
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	font-weight: bold;
+	border-bottom: 1px solid #666;
+	position: relative;
+	overflow: hidden;
+	height:2.15rem;
+}
+section #content .item1 dt{
+	width:1.74rem;
+	height:1.74rem;
+	float:left;
+	padding-right:0.1rem;
+}
+section #content .item1 dt img{
+	width:1.74rem;
+	height:1.74rem;
+}
+section #content .item1 dd{
+	float:left;
+	width:4rem;
+	padding-left: 0.1rem;
+}
+section #content .item1 dd:nth-child(3){
+	font-size: 0.24rem;
+}
+section #content .item1 b{
+	font-size: 0.28rem;
+	color:#f62974;
+}
+section #content .item1 span{
+	font-size: 0.18rem;
+	color:#bbb;
+	text-decoration: line-through;
+	margin-left: 0.2rem;
+}
+section #content .item1 div{
+	position: absolute;
+	width:1.18rem;
+	height:0.52rem;
+	right:0.53rem;
+	bottom:0.36rem;
+}
+section #content .item1 div img{
+	width:100%;
+}
+@font-face {
+	font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}                
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:0.4rem;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+footer{
+	height:0.96rem;
+	background: #484850;
+	width:100%;
+}
+footer ul{
+	width:100%;
+	height:100%;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+footer ul li{
+	flex:1;
+	display:flex;
+	height:100%;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+footer ul .active{
+	border-top: 0.05rem solid #e43669;
+}
+footer ul li a{
+	display:flex;
+	color:#fff;
+	height:100%;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+footer ul li span{
+	font-size: 0.25rem;
+	line-height: 1.3;
+}
+
+
+
+
+
+#class section .all{
+	height:0.86rem;
+	line-height: 0.86rem;
+	font-size: 0.38rem;
+	padding:0 0.3rem 0 0.22rem;
+	border-bottom: 2px solid #aaa;
+}
+#class section span{
+	float:left;
+}
+#class section b{
+	float:right;
+}
+#class section .content li{
+	height:0.86rem;
+	line-height: 0.86rem;
+	font-size: 0.38rem;
+	padding:0 0.3rem 0 0.42rem;
+	border-bottom: 2px solid #aaa;
+}
+#class section .content{
+	display: none;
+}
+#class section .appear{
+	display: block;
+}
+#class header .item2,#more header .item2,#login #wrap header .item2,#cart #wrap header .item2,#myorder #wrap header .item2,#footprint #wrap header .item2,#mydiscount #wrap header .item2,#myshow #wrap header .item2{
+	position: relative;
+}
+#class header .item2 img,#more header .item2 img,#login header .item2 img, #cart header .item2 img,#myorder header .item2 img,#footprint header .item2 img,#mydiscount header .item2 img,#myshow #wrap header .item2 img{
+	position: absolute;
+	left:0.2rem;
+	top:0.29rem;
+	width:0.51rem;
+}
+#cart header .item2 button,#login header .item2 button{
+	position: absolute;
+	right:0.2rem;
+	top:0.16rem;
+	width:1.08rem;
+	height:0.53rem;
+	font-size: 0.24rem;
+	background: #f65984;
+	color:#fff;
+	border:none;
+	border-radius: 0.15rem;
+	outline: none;
+}
+#cart .ititle{
+	height:0.9rem;
+	background: #333;
+	display: flex;
+	color:#fff;
+	line-height: 0.9rem;
+	font-size: 0.29rem;
+	text-align: center;
+}
+#cart .ititle .item1{
+	flex:1;
+}
+#cart .ititle .item2{
+	flex:2;
+}
+#cart .ititle .item2 span{
+	color:#e6356b;
+}
+
+#cart section .content dl,#myorder section .content dl,#footprint section .content dl{
+	padding:0.2rem;
+	border-bottom: 2px solid #aaa;
+	overflow: hidden;
+}
+#cart section .content dt,#myorder section .content dt,#footprint section .content dt{
+	width:1.74rem;
+	height: 1.74rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+#cart section .content dt img,#myorder section .content dt img,#footprint section .content dt img{
+	width:100%;
+}
+#cart section .content dd,#myorder section .content dd,#footprint section .content dd{
+	width:3.83rem;
+	float:left;
+	font-size: 0.3rem;
+	line-height: 0.4rem;
+}
+#cart section .content dd:nth-child(2) span,#myorder section .content dd:nth-child(2) span,#footprint section .content dd:nth-child(2) span{
+	display: inline-block;
+	width:2.8rem;
+}
+#cart section .content dd:nth-child(2) img,#footprint section .content dd:nth-child(2) img,#myorder section .content dd:nth-child(2) em,#footprint section .content dd:nth-child(2) em{
+	width:0.26rem;
+	float:right;
+}
+#cart section .content dd:nth-child(3) em{
+	float:right;
+}
+#cart section .content dd:nth-child(3) span b,#myorder section .content dd:nth-child(3) span b,#footprint section .content dd:nth-child(3) span b{
+	color:#e43669;
+	margin-left: 0.2rem;
+}
+#cart section .content dd:nth-child(4) span{
+	float:left;
+	margin-right:0.2rem;
+}
+#cart section .content dd:nth-child(4) input{
+	width:0.74rem;
+	height:0.44rem;
+	float:left;
+	border:1px solid #ccc;
+	border-radius: 0.05rem;
+	text-align: center;
+	margin:0 0.15rem;
+}
+#cart section .content dd:nth-child(4) a{
+	display: inline-block;
+	float:left;
+	width:0.57rem;
+	height:0.42rem;
+	background: #a0a0a0;
+	border-radius: 0.1rem;
+	color:#fff;
+	text-align: center;
+	line-height: 0.42rem;
+	font-weight: bold;
+}
+#myorder section .content dd:nth-child(4) a{
+	display: inline-block;
+	float:right;
+	width:1.38rem;
+	height:0.53rem;
+	background: #e12a62;
+	border-radius: 0.1rem;
+	color:#fff;
+	text-align: center;
+	line-height: 0.53rem;
+	font-weight: bold;
+	font-size: 0.24rem;
+}
+#cart section .null{
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+}
+#cart section .null p{
+	font-size: 0.35rem;
+	line-height: 0.85rem;
+	margin-top: 0.37rem;
+}
+#cart section .null img{
+	width:2.61rem;
+	margin-bottom: 0.7rem;
+}
+#cart section .null button{
+	width:4.22rem;
+	height:0.92rem;
+	border:none;
+	background: #ee4878;
+	border-radius: 0.2rem;
+	font-size: 0.47rem;
+	color:#fff;
+	font-weight: bold;
+	outline: none;
+}
+
+
+#myshow section .myInfo{
+	padding:0.2rem;
+	padding:0.6rem 0.35rem;
+	overflow: hidden;
+}
+#myshow section .myInfo dt{
+	float:left;
+	margin-right: 0.32rem;
+}
+#myshow section .myInfo dd:nth-child(2){
+	font-size: 0.35rem;
+	padding:0.3rem 0 0.3rem;
+}
+#myshow section .myInfo dd:nth-child(3){
+	font-size: 0.24rem;
+}
+#myshow section .myInfo dd:nth-child(3) a{
+	color:#fff;
+	display: inline-block;
+	width:1.08rem;
+	height:0.54rem;
+	background: #f04d7c;
+	line-height: 0.54rem;
+	text-align:center;
+	border-radius: 0.1rem;
+	outline: none;
+}
+#myshow section .myInfo img{
+	width:1.64rem;
+}
+#myshow section .content{
+	border:2px solid #dedede;
+	border-radius: 0.2rem;
+	margin:0 0.49rem 0 0.32rem;
+}
+#myshow section .content li{
+	padding:0 0.28rem;
+	height:0.88rem;
+	line-height: 0.88rem;
+	font-size: 0.35rem;
+	font-weight: bold;
+	border-bottom: 2px solid #dedede;
+}
+#myshow section .content a{
+	color:#000;
+	width:100%;
+	height:100%;
+	display: inline-block;
+}
+#myshow section .content li:last-child{
+	border:none;
+}
+#myshow section .content li span{
+	float:left;
+}
+#myshow section .content li em{
+	float:right;
+}
+
+#login section input[type="text"],#login section input[type="password"]{
+	width:5.6rem;
+	height:0.8rem;
+	border-radius: 0.2rem;
+	border:2px solid #ccc;
+	padding-left:0.2rem;
+	font-size: 0.36rem;
+	outline: none;
+}
+#login section ul{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	font-size: 0.24rem;
+	height:4.85rem;
+}
+#login section ul li{
+	min-height: 1.25rem;
+}
+#login section ul li:nth-child(1){
+	margin:0.6rem 0rem 0.2rem 0rem;
+}
+#login section li:nth-child(3){
+	width:5.6rem;
+}
+#login section li:nth-child(3) label{
+	color:#666;
+}
+#login section li:nth-child(3) a{
+	margin-left:0.5rem;
+	line-height: 100%;
+	color:#aaa;
+	text-decoration: underline;
+}
+#login section .btn{
+	width:5.6rem;
+	height:0.9rem;
+	background: #e32e65;
+	font-size: 0.35rem;
+	color:#fff;
+	border:none;
+	border-radius: 0.2rem;
+	text-align: center;
+	line-height: 0.9rem;
+}
+#more section{
+	padding:0 0.4rem;
+}
+#more section ul{
+	border:2px solid #dedede;
+	border-radius: 0.2rem;
+}
+#more section ul:first-child{
+	margin:0.39rem 0 0.24rem;
+}
+#more section ul li{
+	border-bottom:2px solid #dedede;
+	line-height: 0.87rem;
+	font-size: 0.35rem;
+	padding-left: 0.28rem; 
+}
+#more section ul li:last-child{
+	border:none;
+}
+#more section button{
+	height:0.9rem;
+	width:100%;
+	background: #e53269;
+	border-radius: 0.2rem;
+	border:none;
+	color:#fff;
+	font-size: 0.36rem;
+	font-weight: bold;
+	outline: none;
+}
+
+
+#mydiscount section{
+	padding:0 60px;
+}
+#mydiscount section .item1{
+	margin:0.3rem 0 0.25rem 0;
+}
+#mydiscount section .item1 ul{
+	display: flex;
+	height:0.62rem;
+	border:1px solid #ccc;
+	border-radius: 0.1rem;
+	overflow: hidden;
+}
+#mydiscount section .item1 ul li{
+	flex:1;
+	text-align: center;
+	line-height: 0.62rem;
+	border-right: 1px solid #ccc;
+	background: #f3f3f3;
+	color:#454545;
+	font-weight: bold;
+}
+#mydiscount section .item1 ul .active{
+	background: #d91754;
+	color:#fff;
+}
+#mydiscount section .item1 ul li:last-child{
+	border:none;
+}
+#mydiscount section .item2{
+	border:1px solid #ccc;
+	width:100%;
+	border-radius: 0.1rem;
+	padding:0.05rem 0 0.05rem 0.13rem;
+	font-size: 0.23rem;
+}
+#mydiscount section .item2 li{
+	line-height: 0.36rem;
+}
+#mydiscount section .item2 li em{
+	color:#898989;
+}
+#footprint section em img{
+	width:1.18rem;
+	float:right;
+}
+#footprint section em span{
+	text-decoration: line-through;
+	font-size: 0.2rem;
+	color:#bbb;
+}

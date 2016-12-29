@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<title>分类</title>
+<link rel="stylesheet" type="text/css" href="../css/swiper.css">
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<script type="text/javascript"src="../js/zepto.js"></script>
+<script type="text/javascript"src="../js/swiper.js"></script>
+<script type="text/javascript"src="../js/index.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+    $("footer ul li").removeClass("active").eq(1).addClass("active");
+    $(".all").on("touchend",function(){
+        $(".content").toggleClass('appear');
+    })
+}
+</script>
+</head>
+<body id="class">
+    <div id="wrap">
+    	<header>
+    		<div class="item1">
+    			<img src="../img/head.png"alt=""title="">
+    		</div>
+    		<div class="item2">
+    			<img src="../img/return.png">
+    			ZXIU 走秀网
+    		</div>
+    		<div class="item3">
+				<input id="search" type="text"name=""value=""placeholder="请输入搜索内容"/>
+    		</div>
+    	</header>
+    	<section>
+			<div class="all">
+				<span>全部</span>
+				<b>></b>
+			</div>
+			<div class="content">
+				<ul>
+					<li><span>衬衫</span><b>></b></li>
+					<li><span>女装T恤</span><b>></b></li>
+					<li><span>珠宝配饰</span><b>></b></li>
+					<li><span>美食保健</span><b>></b></li>
+					<li><span>化妆品</span><b>></b></li>
+					<li><span>品牌专场</span><b>></b></li>
+				</ul>
+			</div>
+    	</section>
+    	<footer>
+    		<ul>
+    			<li class="index active">
+    				<a href="index.html">
+    					<span class="iconfont">&#xe601;</span>
+    					<b>首页</b>
+    				</a>
+    			</li>
+    			<li class="class">
+    				<a href="class.html">
+    					<span class="iconfont">&#xe604;</span>
+    					<b>分类</b>
+    				</a>
+    			</li>
+    			<li class="cart">
+    				<a href="cart.html">
+	    				<span class="iconfont">&#xe602;</span>
+	    				<b>购物车</b>
+    				</a>
+    			</li>
+    			<li class="myshow">
+    				<a href="myshow.html">
+	    				<span class="iconfont">&#xe605;</span>
+	    				<b>我的秀</b>
+    				</a>
+    			</li>
+    			<li class="more">
+    				<a href="more.html">
+	    				<span class="iconfont">&#xe603;</span>
+	    				<b>更多</b>
+    				</a>
+    			</li>
+    		</ul>
+    	</footer>
+    </div>
+</body>
+</html>

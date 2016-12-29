@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>介绍</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="viewport"content="initial-scale=1,minimum-scale=1,maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="../css/swiper.css">
+<script type="text/javascript"src="../js/zepto.js"></script>
+<script type="text/javascript"src="../js/touch.js"></script>
+<script type="text/javascript"src="../js/swiper.js"></script>
+<style type="text/css">
+	html,body,#wrap{
+		width:100%;
+		height:100%;
+		font-size: 0;
+	}
+	html{
+		font-size: 15.625vw;
+	}
+	#wrap{
+		height:100%;
+		display: flex;
+		flex-direction:column;
+		background: #f8f3f7;
+		overflow-Y:scroll;
+	}
+	#wrap img,.swiper-container{
+		width:100%;
+	}
+	*{
+		margin:0;
+		padding:0;
+	}
+	.enter{
+		position: relative;
+	}
+	#wrap .enter img:last-child{
+		position: absolute;
+		left:50%;
+		margin-left: -0.59rem;
+		bottom:1.47rem;
+		width:1.18rem;
+		height:0.52rem;
+	}
+</style>
+<script type="text/javascript">
+    window.onload=function(){
+    	var mySwiper=new Swiper(".swiper-container",{
+	    	pagination: ".swiper-pagination",
+    	});
+    	$("#enter").tap(function(){
+    		location.href="index.html";
+    	});
+    }	
+</script>
+</head>
+<body>
+    <div id="wrap">
+    	<div id="head">
+    		<img src="../img/head.png">
+    	</div>
+    	<div class="swiper-container">
+	    	<div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="../img/introduce1.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/introduce2.png">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../img/introduce3.png">
+		        </div>
+		        <div class="swiper-slide enter">
+		        	<img src="../img/introduce4.png">
+		        	<img id="enter" src="../img/enter.png">
+		        </div>
+	    	</div>
+	    	<!-- 如果需要分页器 -->
+	    	<div class="swiper-pagination"></div>
+		</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>个人简历</title>
+    <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+    <script type="text/javascript"src="js/jquery.js"></script>
+    <script type="text/javascript"src="js/swiper.js"></script>
+    <script type="text/javascript"src="js/animate.min.js"></script>
+    <script type="text/javascript"src="js/index.js"></script>
+    <style type="text/css">
+    *{
+    	margin:0;
+    	padding:0;
+    }
+    li{
+    	list-style: none;
+    }
+    html,body{
+    	width:100%;
+    	height:100%;
+    	font-size: 20px;
+    	overflow: hidden;
+    }
+    html{
+    	font-size: 15.625vw;
+    }
+	.swiper-container {
+	    width: 100%;
+	    height: 100%;
+	    border: 1px solid #ccc;
+	    text-align: center;
+	}
+	.slide1{
+		background: #eee;
+		
+	}
+	.cover{
+		text-align: center;
+	}
+	.cover .item1{
+		margin:2rem 0 1rem;
+	} 
+	.cover .item1 img{
+		border-radius: 50%;
+	} 
+	.cover .item2{
+		margin:2rem 0 0.5rem;
+		font-weight: bold;
+		font-size: 0.5rem;
+	} 
+	.cover .item3{
+		font-size: 0.3rem;
+	} 
+	.slide2{
+		background: #dee;
+	}
+	.slide3{
+		background: #cee;
+	}
+	.slide4{
+		background: #bee;
+	}
+	.slide5{
+		background: #aee;
+	}
+	.introduce{
+		text-align: center;
+	}
+	h2{
+		padding:0.2rem 0;
+		margin:0.8rem 0.5rem;
+		font-size: 0.5rem;
+		border-bottom: 1px solid #000;
+	}
+	.introduce ul{
+		font-size: 0.3rem;
+		line-height: 0.8rem;
+		text-align: left;
+	}
+	.introduce ul li{
+		border:2px solid #aaa;
+		margin:0.1rem 0.3rem;
+		padding-left:0.3rem;
+		border-radius:0.4rem;
+	}
+	
+	.skills ul{
+		font-size: 0.3rem;
+		line-height: 0.6rem;
+		text-align: left;
+	}
+	.skills ul li{
+		border:2px solid #aaa;
+		margin:0.1rem 0.3rem;
+		padding-left:0.5rem;
+		border-radius:0.4rem;
+	}
+	.skills ul li span{
+		display: inline-block;
+		min-width: 2rem;
+	}
+	.experience ul{
+		font-size: 0.2rem;
+		line-height: 1rem;
+		text-align: left;
+	}
+	.experience ul li{		
+		padding-left:0.5rem;
+	}
+	.experience ul li span{
+		display: inline-block;
+		min-width: 1rem;
+		margin-right: 1rem;
+		border-right: 1px solid #000;
+	}
+	.contact li{
+		line-height: 1rem;
+		font-size: 0.5rem;
+	}
+	/*@keyframes move{
+		0%{bottom:0.2rem}
+		100%{bottom:0.4rem}
+	}*/
+	/*@keyframes move{
+    	to{
+    		bottom: 0.4rem;
+    	}
+    }*/
+   @-moz-keyframes move{
+   		0%{bottom:0.2rem}
+		100%{bottom:0.4rem}
+   }
+   @-ms-keyframes move{
+   		0%{bottom:0.2rem}
+		100%{bottom:0.4rem}
+   }
+   @-webkit-keyframes move{
+   		0%{bottom:0.2rem}
+		100%{bottom:0.4rem}
+   }
+   @keyframes move{
+   		0%{bottom:0.2rem}
+		100%{bottom:0.4rem}
+   }
+	#move{
+		-moz-animation: move 1s;
+        -moz-animation-iteration-count: infinite;
+        -ms-animation: move 1s;
+        -ms-animation-iteration-count: infinite;
+        -webkit-animation: move 1s;
+        -webkit-animation-iteration-count: infinite;
+        animation: move 1s;
+        animation-iteration-count: infinite;
+	}
+    </style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide slide1">
+	        	<div class="cover">
+	        		<div class="item1">
+		        		<img src="img/photo.jpg"/>
+		        	</div>
+		        	<div class="item2">
+		        		个人简历
+		        	</div>
+		        	<div class="item3">
+		        		web前端工程师
+		        	</div>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide slide2">
+	        	<div class="introduce">
+	        		<h2>个人信息</h2>
+	        		<div class="content">
+	        			<ul>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s">姓名：王容易</li>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">职位：web前端工程师</li>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s">地址：郑州高新区</li>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s">专业：自动化</li>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s">毕业院校：河南科技大学</li>
+	        				<li class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s">学历：本科</li>
+	        			</ul>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide slide3">
+	        	<div class="skills">
+	        		<h2>专业技能</h2>
+	        		<div class="content">
+	        			<ul>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.1s"><span>HTML+CSS</span>专业程度：90%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><span>JS</span>专业程度：90%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"><span>jQuery</span>专业程度：90%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s"><span>Ajax</span>专业程度：90%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.9s"><span>Angular</span>专业程度：80%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.1s"><span>git</span>专业程度：80%</li>
+	        				<li class="ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s"><span>gulp</span>专业程度：80%</li>	        				        				
+	        			</ul>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide slide4">
+	        	<div class="experience">
+	        		<h2>工作经验</h2>
+	        		<div class="content">
+	        			<ul>
+	        				<li class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><span>2013-2014</span>北京中网易企秀科技有限公司</li>
+	        				<li class="ani" swiper-animate-effect="bounceInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s"><span>2014-至今</span>北京启航联众科技有限公司</li>	        					        				        				
+	        			</ul>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="swiper-slide slide5">
+	        	<div class="contact">
+	        		<h2>联系方式</h2>
+	        		<div class="content">
+	        			<ul>
+	        				<li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.4s"><span>手机：</span>15238689033</li>
+	        				<li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="0.7s"><span>QQ：</span>657938904</li>
+	        				<li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1s"><span>微信：</span>rongyi2233</li>
+	        				<li class="ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="0.5s" swiper-animate-delay="1.3s"><span>邮箱：</span>657938904@qq.com</li>	
+	        			</ul>
+	        		</div>
+	        	</div>
+	        </div>
+	    </div>
+	    <img src="img/jiantou.png"id="move"style="position: absolute;left: 50%;bottom:0.2rem;width: 0.8rem;z-index: 10000;margin-left: -0.4rem;"/>
+	</div>
+	<script type="text/javascript">
+		 var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'vertical',
+		    loop: true,
+	    	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+			    swiperAnimateCache(swiper); //隐藏动画元素 
+			   	swiperAnimate(swiper); //初始化完成开始动画
+			}, 
+			onSlideChangeEnd: function(swiper){ 
+			   swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+			} 
+	    
+	  })        
+	</script>
+</body>
+</html>

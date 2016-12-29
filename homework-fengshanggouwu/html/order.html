@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单结算页</title>
+    <script type="text/javascript"src="../js/jQuery.1.12.0.js"></script>
+    <script type="text/javascript"src="../js/common.js"></script>
+    <script type="text/javascript"src="../js/order.js"></script>
+    <script type="text/javascript"src="../js/cookie.js"></script>
+    <link rel="stylesheet"type="text/css" href="../css/common.css"/>
+    <link rel="stylesheet"type="text/css" href="../css/index.css"/>
+</head>
+<body>
+<div id="nav">
+    <div class="content1">
+        <ul>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">免费注册<span>送50元</span></a></li>
+            <li>|</li>
+            <li><a href="javascript:;">电话订购会员登录<span>送50元</span></a></li>
+            <li id="my-fs">
+                <a href="javascript:;">我的风尚</a>
+                <ul>
+                    <li><a href="order.html">我的订单</a></li>
+                    <li><a href="javascript:;">我的积分</a></li>
+                    <li><a href="javascript:;">我的优惠券</a></li>
+                    <li><a href="javascript:;">我的消息</a></li>
+                    <li><a href="javascript:;">我的收藏</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="order-main">
+    <div class="content1">
+        <div class="top">
+            <a href="index.html"><img src="../img/logo.gif" alt=""></a>
+            <ul>
+                <li class="li1">1.我的购物车</li>
+                <li class="li2">2.填写核对订单信息</li>
+                <li class="li3">3.成功提交订单</li>
+            </ul>
+        </div>
+        <div class="mid">
+            <h2>填写并核对订单信息</h2>
+            <div class="div1">
+                <dl>
+                    <dt><a href="javascript:;">收货地址</a></dt>
+                    <dd><a id="newAdd" href="javascript:;">使用新地址</a></dd>
+                    <ul>
+                        <li class="item1">
+                            <span>收货人：</span>
+                            <input type="text"name=""value="收货人姓名">
+                            <label for="man">先生</label>
+                            <input checked="checked" id="man" type="radio"name="sex"value="">
+                            <label for="woman">小姐</label>
+                            <input id="woman" type="radio"name="sex"value="">
+                        </li>
+                        <li class="item2">
+                            <span>所在区域：</span>
+                            <select name="" value="选择省">
+                                <option>选择省</option>
+                            </select>
+                            <select name="" value="选择省">
+                                <option>选择市</option>
+                            </select>
+                            <select name="" value="选择省">
+                                <option>选择区</option>
+                            </select>
+                        </li>
+                        <li class="item3">
+                            <span>详细地址：</span>
+                            <input type="text"value="详细地址">
+                        </li>
+                        <li class="item4">
+                            <span>手机号码：</span>
+                            <input type="text"value="手机号码">
+                            <em>或</em><span>固定电话：</span>
+                            <input type="text"value="区号"> -
+                            <input type="text"value="电话号码"> -
+                            <input type="text"value="分机">
+                        </li>
+                        <li class="item5">
+                            <span>邮政编码：</span>
+                            <input type="text"value="邮政编码">
+                        </li>
+                        <li class="item6">
+                            <a id="yes" href="javascript:;">确认收货人信息</a>
+                            <a id="no" href="javascript:;">取消</a>
+                        </li>
+                    </ul>
+                </dl>
+            </div>
+            <div class="div2">
+                <dl>
+                    <dt><a href="javascript:;">付款方式</a></dt>
+                    <dd><a href="javascript:;">请点击收货信息以确定支付方式！</a></dd>
+                </dl>
+            </div>
+            <div class="div3">
+                <dl>
+                    <dt><a href="javascript:;">送货方式</a></dt>
+                    <dd><a href="javascript:;">请点击收货信息以确定配送方式！</a></dd>
+                </dl>
+            </div>
+            <div class="div4">
+                <dl>
+                    <dt><a href="javascript:;">发票抬头</a></dt>
+                    <dd><input type="text"name=""value="个人"></dd>
+                </dl>
+            </div>
+            <div class="div5">
+                <span>商品清单</span><a href="cart.html">返回购物车修改</a>
+            </div>
+            <table>
+                <thead>
+                    <tr class="tr1">
+                        <td class="td1">商品名称</td>
+                        <td class="td2">风尚价</td>
+                        <td class="td3">数量</td>
+                        <td class="td4">库存</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--<tr class="tr2">
+                        <td class="td1">
+                            <dl>
+                                <dt><a href="javascript:;"><img src="../img/small1.png" alt=""></a></dt>
+                                <dd class="dd1"><a href="javascript:;">"富贵圆满"阿富汗玉手镯</a></dd>
+                                <dd><span>商品编号：310762</span><em>颜色：无</em><b> 规格：L</b></dd>
+                            </dl>
+                        </td>
+                        <td class="td2">¥199</td>
+                        <td class="td3">1</td>
+                        <td class="td4">有货</td>
+                    </tr>-->
+                </tbody>
+
+            </table>
+            <div class="favor favor1">
+                <h3>使用优惠券抵扣订单金额</h3>
+                <div class="wrap">
+                    <h4>可用优惠券</h4>
+                    <div>
+                        <p>以下是此订单可用的优惠。您可以查看所有优惠券了解使用规则。</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="favor">
+                <h3>使用礼金券抵扣订单金额</h3>
+                <div class="wrap">
+                    <h4>可用优惠券</h4>
+                    <div>
+                        <p>以下是此订单可用的优惠。您可以查看所有优惠券了解使用规则。</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="favor">
+                <h3>使用积分抵扣订单金额</h3>
+                <div class="wrap">
+                    <h4>可用优惠券</h4>
+                    <div>
+                        <p>以下是此订单可用的优惠。您可以查看所有优惠券了解使用规则。</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="favor">
+                <h3>订单备注</h3>
+                <div class="wrap">
+                    <h4>可用优惠券</h4>
+                    <div>
+                        <p>以下是此订单可用的优惠。您可以查看所有优惠券了解使用规则。</p>
+                        <ul>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="radio"name="yuan"> 200-25元
+                                </label>
+                                <span>注册送50元优惠券</span>
+                                <em>有效期至2016-11-26</em>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bot">
+            <ul>
+                <li class="li1"><span>商品总价：</span><em>¥498</em></li>
+                <li class="li2"><span>促销优惠：</span><em>¥0</em></li>
+                <li class="li3"><span>积分抵扣：</span><em>¥0</em></li>
+                <li class="li4"><span>优  惠  券：</span><em>¥0</em></li>
+                <li class="li5"><span>礼  金  券：</span><em>¥0</em></li>
+                <li class="li6"><span>支付优惠：</span><em>¥0</em></li>
+                <li class="li7"><span>运费金额：</span><em>¥0</em></li>
+            </ul>
+            <div class="submit">
+                <p class="p1"><span>可获积分：</span><em>¥1.50</em></p>
+                <p class="p2"><b>订单总计：</b><em>¥473</em></p>
+                <a href="javascript:;">提交订单</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="footer">
+    <div class="content1">
+        <div class="foot-bot">
+            <h2><a href="javascript:;">触屏版</a>电脑版</h2>
+            <p>ICP经营许可证：赣ICP备15000001号</p>
+            <p>24小时订购和服务热线：4001-677-077</p>
+            <p>Copyright 2008-2014，www.fstvgo.com 风尚购物 版权所有</p>
+            <p>本网站用字经北京北大方正电子有限公司授权许可</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
